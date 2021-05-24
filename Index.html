@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Don Peppe</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- Inizio facendo sia la nav bar che il footer, dopo inizio con il main -->
+        <!-- La nav bar la divido in 4 parti, e giusto al centro inserirò il logo così come è nello screen -->
+        <div class="navbar">
+            <div class="container navbar  ">
+                <nav class="d-flex">
+                    <a class="btnNavbar" href="#">ORDER ONLINE</a>
+                    <div class="d-flex">
+                        <ul class="d-flex">
+                            <li class="d-flex itemsMenu" v-for="element in menuLeft">
+                                <img class="baffo" src="svg\svg-0.svg" alt="">
+                                <a :href="element.link">{{element.text}}</a>
+                            </li>
+                        </ul>
+                        <img src="img\h5-logo-divided-header.png" alt="Logo">
+                        <ul class="d-flex">
+                            <li class="d-flex itemsMenu" v-for="element in menuRight">
+                                <img class="baffo" src="svg\svg-0.svg" alt="">
+                                <a :href="element.link">{{element.text}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="d-flex">
+                        <li class=" pos-relative">
+                            <a href="#"><img class="vespa " src="svg/svg-1.svg" alt=""><span>CART</span>
+                                <span class="cart">0</span>
+                            </a>
+                            
+                        </li>
+                        <li class="pos-relative ">
+                            <a href="#" class="d-flex">
+                                <i class="fa fa-search" aria-hidden="true" @click="searchInput=!searchInput"></i>
+                                <span v-if="!searchInput" class="search" @click="searchInput=!searchInput">SEARCH</span>
+                                <input type="text" placeholder="search..." v-if="searchInput" class="searchbar">
+                            </a>
+
+
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <main>
+            <div class="hero"></div>
+        </main>
+
+    </div>
+
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

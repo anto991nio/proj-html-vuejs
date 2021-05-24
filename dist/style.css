@@ -1,1 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  background-image: url(/images/sfondostellato.jpg?d9db323f65cabbfe765cadda294d251c);
+}
+
+nav {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 10px;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+nav .btnNavbar {
+  background-color: #D2401E;
+  padding: 10px 20px;
+}
+nav .btnNavbar:hover {
+  background-color: #e77156;
+}
+nav ul {
+  align-items: center;
+}
+nav a {
+  color: #ffffff;
+}
+nav img {
+  height: 100px;
+}
+nav .d-flex {
+  align-items: center;
+}
+nav .itemsMenu:hover .baffo {
+  filter: invert(1);
+}
+nav .baffo {
+  height: 15px;
+  filter: invert(0);
+  margin-right: 5px;
+}
+nav .vespa {
+  height: 20px;
+  filter: invert(1);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+nav .fa-search {
+  margin-right: 10px;
+}
+nav li {
+  margin: 0 20px 0 0;
+}
+nav .search {
+  position: absolute;
+  right: -40px;
+}
+nav .searchbar {
+  display: block;
+  position: absolute;
+  right: -170px;
+}
+nav .cart {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #D2401E;
+  height: 10px;
+  width: 10px;
+  text-align: center;
+  line-height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+}

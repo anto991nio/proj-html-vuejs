@@ -1,0 +1,80 @@
+.navbar {
+   
+    background-image: url(../../img/sfondostellato.jpg);
+}
+nav{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: $textNavbar;
+    padding: 20px;
+    text-align: center;
+
+    .btnNavbar{
+        background-color: $btnOrange;
+        padding: 10px 20px;
+        &:hover{
+            background-color: lighten($btnOrange, 15%)
+        }
+    }
+    ul{
+        align-items: center;
+    }
+    a{
+    color: $textNavbar;
+    }
+    img{
+        height: 100px;
+    }
+    .d-flex{
+    align-items: center;
+
+    }
+    .itemsMenu:hover .baffo{
+        filter: invert(1);
+
+    }
+    .baffo{
+        height: 15px;
+        filter: invert(0);
+        margin-right: 5px;
+        
+
+    }
+    .vespa{
+        height: 20px;
+        filter: invert(1);
+        margin-right: 10px;
+        vertical-align: middle;
+
+    }
+    .fa-search{
+        margin-right: 10px;
+    }
+   li{
+       margin: 0 20px 0 0;
+       
+   }
+   .search{
+    position: absolute;
+    right: -40px;
+   }
+   .searchbar{
+       display: block;
+       position: absolute;
+       right: -170px;
+   }
+   .cart{
+       display: inline-block;
+       background-color: $textNavbar;
+       color: $btnOrange;
+       height: 10px;
+       width: 10px;
+       text-align: center;
+       line-height: 10px;
+       border-radius: 50%;
+       position: absolute;
+       left: 0;
+   }
+}
