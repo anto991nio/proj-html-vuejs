@@ -82,7 +82,7 @@ li {
 }
 
 .navbar {
-  background-image: url(/images/sfondostellato.jpg?d9db323f65cabbfe765cadda294d251c);
+  background-image: url(/images/sfondostellato.jpg?898e3f19ca74ded17e72d4dd8b685061);
 }
 
 nav {
@@ -155,6 +155,61 @@ nav .cart {
   left: 0;
 }
 
-.contact {
-  background-image: url(/images/sfondostellato.jpg?d9db323f65cabbfe765cadda294d251c);
+footer {
+  background-image: url(/images/sfondostellato.jpg?898e3f19ca74ded17e72d4dd8b685061);
+}
+footer .col-6 {
+  flex-wrap: wrap;
+}
+footer .col-12 {
+  padding: 0 20px 0 40px;
+}
+footer .col-12 p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #b7903c;
+  font-size: 10px;
+}
+footer .col-12 p span {
+  color: #339966;
+}
+footer .col-12 img {
+  height: 100px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.contact-container {
+  padding: 60px 40px;
+}
+.contact-container .col-4 {
+  color: #b7903c;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+}
+.contact-container .col-4 p {
+  color: #ffffff;
+  font-size: 22px;
+}
+.contact-container .col-4 ul li {
+  margin: 20px 0;
+}
+.contact-container .col-4 ul p {
+  color: #b2b2b2;
+  font-size: 14px;
+}
+.contact-container .col-4 .colorOrange {
+  color: #D2401E;
+}
+.contact-container .col-4 .workhours * {
+  font-size: 12px;
+}
+.contact-container .col-4 .workhours .iconSocial * {
+  color: #ffffff;
+  padding: 4px;
+  font-size: 8px;
+}
+
+.imgFooter img {
+  max-width: 100%;
 }

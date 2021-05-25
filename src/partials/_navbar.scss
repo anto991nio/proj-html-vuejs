@@ -3,7 +3,7 @@
     background-image: url(../../img/sfondostellato.jpg);
 }
 nav{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $fontFamily;
     font-size: 10px;
     justify-content: space-between;
     align-items: center;

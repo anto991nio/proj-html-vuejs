@@ -1,3 +1,70 @@
-.contact{
+footer{
     background-image: url(../../img/sfondostellato.jpg); 
+    .col-6{
+        flex-wrap: wrap;
+    }
+    .col-12{
+        padding: 0 20px 0 40px;
+        p{  
+            font-family: $fontFamily;
+            color:$textFooterTitle;
+            font-size: 10px;
+            span{
+                color: #339966;
+            }
+        }
+        img{
+            height: 100px;
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+        }
+    }
+    
+}
+.contact-container{
+    padding: 60px 40px;
+    
+    
+    .col-4{
+        color:$textFooterTitle;
+        font-family: $fontFamily;
+        font-size: 14px;
+        p{
+            color: $textNavbar;
+            font-size: 22px;
+        }
+        ul {
+            li{
+                margin: 20px 0;
+            }
+            p{
+                color: $textFooter;
+                font-size: 14px;
+                
+            }
+        }
+        .colorOrange{
+            color: $btnOrange;
+        }
+        .workhours{
+            *{
+                font-size: 12px;
+            }
+            .iconSocial{
+                
+                *{
+                    color: $textNavbar;
+                    padding: 4px;
+                    font-size: 8px;
+                }
+            }
+            
+        }
+    }
+}
+.imgFooter{
+    img{
+        max-width: 100%;
+    }
 }

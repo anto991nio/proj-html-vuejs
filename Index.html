@@ -42,7 +42,7 @@
                             <a href="#"><img class="vespa " src="svg/svg-1.svg" alt=""><span>CART</span>
                                 <span class="cart">0</span>
                             </a>
-                            
+
                         </li>
                         <li class="pos-relative ">
                             <a href="#" class="d-flex">
@@ -62,8 +62,49 @@
             <div class="hero"></div>
         </main>
         <footer>
-            <div class="d-flex">
-                <div class="col-6 contact " >
+            <div class="d-flex ">
+                <div class="col-6 contact d-flex ">
+                    <div class="contact-container d-flex">
+                        <div class="col-4">
+                            <ul>
+                                <h3>FIND OUR RESTAURANTS</h3>
+                                <li v-for="el in findRestaurants">
+                                    <p>{{el.indirizzo}}</p>
+                                    <p>{{el.citta}}</p>
+                                    <p>{{el.numero}}</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="workhours">
+                                <h3>WORKING HOURS</h3>
+                                <li v-for="el in workDay">
+                                    <span><strong>{{el.day}}</strong> </span><span class="colorOrange">{{el.pos}}</span>
+                                    <p>{{el.hours}}</p>
+                                    <p class="colorOrange">{{el.closedKit}}</p>
+                                </li>
+                                <li>
+                                    <span><strong>FOLLOW US:</strong></span>
+                                    <span class="iconSocial">
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <p><strong>THE DON PEPPE CREW <br> FIRST AND FOREMOST <br> VALUES AN AUTHENTIC, WELL BAKED
+                                    SLICE OF <br>
+                                    PIZZA.</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-12 pos-relative">
+                        <p>Created with &hearts;.by <span>Antonio Cardone</span></p>
+                        <img src="img\premiumquality.png" alt="">
+
+                    </div>
                 </div>
                 <div class="col-6 imgFooter">
                     <img src="img\footer-img-1.jpg" alt="">
