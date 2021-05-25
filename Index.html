@@ -237,6 +237,13 @@
                 </div>
 
             </section>
+            <section class="menu d-flex">
+                <div v-for="el in imagesPizza">
+                    <div><img :src="el.image" alt=""></div>
+                    <div>{{el.name}}</div>
+                    <div>{{el.price}}</div>
+                </div>
+            </section>
             <section class="superman d-flex">
                 <div class="col-6 ">
                     <div class="delish">

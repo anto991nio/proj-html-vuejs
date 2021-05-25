@@ -481,6 +481,13 @@ nav .cart {
   margin-bottom: 5px;
 }
 
+.menu {
+  justify-content: space-between;
+}
+.menu img {
+  height: 150px;
+}
+
 footer {
   background-image: url(/images/sfondostellato.jpg?898e3f19ca74ded17e72d4dd8b685061);
 }
