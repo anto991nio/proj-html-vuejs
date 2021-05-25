@@ -95,6 +95,7 @@
   background-image: url(../../img/h3-testimonials-bckgrnd.jpg);
   padding: 120px 0;
   text-align: center;
+  overflow: hidden;
     .quotes{
         color: #b7903c;
         font-size: 70px;
@@ -127,5 +128,144 @@
     .active-review{
         background-color: #b7903c;
 
+    }
+    .prev{
+        color: $btnOrange;
+        background-color: $textNavbar;
+        width: 60px;
+        height: 60px;
+        transform: rotate(90deg);
+        border-radius: 50px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 10px;
+        font-family: $fontFamily;  
+        position: absolute;
+        top: 45%;
+        left: -30px;
+        cursor: pointer;
+  
+      
+      }
+      .next{
+          color: $btnOrange;
+          background-color: $textNavbar;
+          width: 60px;
+          height: 60px;
+          transform: rotate(-90deg);
+          border-radius: 50px;
+          text-align: center;
+          line-height: 30px;
+          font-size: 10px;
+          font-family: $fontFamily;  
+          position: absolute;
+          top: 45%;
+          right: -30px;
+          cursor: pointer;
+        
+        }
+}
+.special{
+    padding: 10px 0;
+    img{
+        max-width: 100%;
+    }
+    .imgSpecial{
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+    .specialCombo{
+        font-family: $fontFamily;
+        width: 40%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        >div{
+            margin: 25px 0;
+            .price{
+                color: #ab4027;
+                font-size: 20px;
+                padding: 0 10px;
+            }
+        }
+        .textprice{
+            color: $textFooter;
+            font-size: 14px;
+        }
+        
+    }
+}
+.judge{
+
+   img {
+        width: 100%;
+    }
+    h2{
+        position: absolute;
+        color: $textNavbar;
+        font-family: $fontFamily;
+        z-index: 3;
+        top: 50%;
+        left: 20%;
+        transform: translateY(-50%);
+        font-size: 80px;
+
+    }
+}
+.people{
+    .col-3{
+        img{
+            width: 100%;
+
+        }
+        .pallini{
+            position: absolute;
+            height: 100%;
+            display: none;
+
+        }
+        .staff-info{
+            background-color: $btnOrange;
+            width: 90%;
+            height: 90%;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: none;
+            text-align: center;
+            div{
+                font-family: $fontFamily;
+                color: $textNavbar;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                position: absolute;
+                a{
+                color: $textNavbar;
+                margin: 0 5px;
+                }
+                *{
+                    margin: 5px 0;
+                }
+            }
+        }
+        &:hover{
+            .staff{
+                display: none;
+            }
+            .pallini{
+                display: inline-block;
+            }
+            .staff-info{
+                display: inline-block;
+            }
+        }
     }
 }
