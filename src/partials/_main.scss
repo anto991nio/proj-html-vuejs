@@ -269,3 +269,37 @@
         }
     }
 }
+.reservation{
+    background-image: url(../../img/h3-background-img-3.jpg);
+    padding: 50px ;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    .container{
+        align-items: center;
+        justify-content: space-between;
+        width: 800px;
+        input,
+        select{
+            display: inline-block;
+            width: 200px;
+            height: 40px;
+        }
+        span{
+            font-family: $fontFamily;
+            color: $textNavbar;
+        }
+    }
+    
+    .btnReservation{
+        background-color: $btnOrange;
+        padding: 10px 20px;
+        color: $textNavbar;
+        cursor: pointer;
+        
+        &:hover{
+            background-color: lighten($btnOrange, 15%)
+        }
+    }
+}
+

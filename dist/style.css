@@ -397,6 +397,46 @@ nav .cart {
   display: inline-block;
 }
 
+.reservation {
+  background-image: url(/images/h3-background-img-3.jpg?d370b04a1c53f55b05c6c5f583b70f38);
+  padding: 50px;
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.reservation .container {
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+}
+.reservation .container input,
+.reservation .container select {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+}
+.reservation .container span {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+}
+.reservation .btnReservation {
+  background-color: #D2401E;
+  padding: 10px 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.reservation .btnReservation:hover {
+  background-color: #e77156;
+}
+
+.conferm {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
 footer {
   background-image: url(/images/sfondostellato.jpg?898e3f19ca74ded17e72d4dd8b685061);
 }

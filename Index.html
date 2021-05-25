@@ -58,7 +58,7 @@
                 </nav>
             </div>
         </div>
-        <main>
+        <main class="pos-relative">
             <section class="hero pos-relative">
                 <p class="prev" @click="changeImg(-1)"><strong>PREV</strong></p>
                 <img class="wordHero" :src="imagesHero[activeImgHero].word" alt="">
@@ -226,6 +226,32 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="reservation">
+                <div class="container d-flex">
+                    <select name="person" id="person" v-model="person">
+                        <option value="1 persona">1 person</option>
+                        <option value="2 persone">2 person</option>
+                        <option value="3 persone">3 person</option>
+                        <option value="4 persone">4 person</option>
+                    </select>
+                    <span><strong>FOR</strong> </span>
+
+                    <input type="date" v-model="data">
+                    <span><strong>AT</strong> </span>
+                    <select name="hours" id="hours" v-model="hours">
+                        
+                        <option value="7:00pm">7:00pm</option>
+                        <option value="8:00pm">8:00pm</option>
+                        <option value="9:00pm">9:00pm</option>
+                        <option value="10:00pm">10:00pm</option>
+                        <option value="11:00pm">11:00pm</option>
+                        <option value="12:00pm">12:00pm</option>
+                    </select>
+                    <div class="btnReservation" @click="clickReservation">BOOK A TABLE</div>
+                </div>
+                
+            
             </section>
         </main>
         <footer>

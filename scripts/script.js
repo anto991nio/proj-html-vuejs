@@ -76,6 +76,11 @@ const app = new Vue({
             word:"img/h3-rev-img-1.png",
         },],
         activeImgHero: 0,
+        hours:"",
+        data:"",
+        person:"",
+        reservation:[{}],
+        reser:false
     }, 
     methods:{
         changeImg(direction){
@@ -87,7 +92,16 @@ const app = new Vue({
             }
    
             this.activeImgHero = newIndex
-        }
+        },
+        clickReservation(){
+            this.reservation.push({
+                hours: this.hours,
+                data: this.data,
+                person: this.person,
+        })
+        alert("La tua prenotazione è confermata alle ore" +  " " + this.reservation[1].hours +  " " + "il giorno" + " " + this.reservation[1].data +  " " + "per " + " " + this.reservation[1].person )
+
+    }
     }
    
 })
