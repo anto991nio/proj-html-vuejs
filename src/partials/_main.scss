@@ -1,3 +1,48 @@
 .hero{
-  
+  background-image: url(../../img/sfondostellato.jpg);
+  text-align: center;
+  padding: 30px;
+  .wordHero{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  .pizza{
+      height: 500px;
+  }
+  .prev{
+      color: $btnOrange;
+      background-color: $textNavbar;
+      width: 60px;
+      height: 60px;
+      transform: rotate(90deg);
+      border-radius: 50px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 10px;
+      font-family: $fontFamily;  
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      cursor: pointer;
+    
+    }
+    .next{
+        color: $btnOrange;
+        background-color: $textNavbar;
+        width: 60px;
+        height: 60px;
+        transform: rotate(-90deg);
+        border-radius: 50px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 10px;
+        font-family: $fontFamily;  
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        cursor: pointer;
+      
+      }
+
 }

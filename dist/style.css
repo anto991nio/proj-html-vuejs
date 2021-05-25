@@ -155,6 +155,52 @@ nav .cart {
   left: 0;
 }
 
+.hero {
+  background-image: url(/images/sfondostellato.jpg?898e3f19ca74ded17e72d4dd8b685061);
+  text-align: center;
+  padding: 30px;
+}
+.hero .wordHero {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .pizza {
+  height: 500px;
+}
+.hero .prev {
+  color: #D2401E;
+  background-color: #ffffff;
+  width: 60px;
+  height: 60px;
+  transform: rotate(90deg);
+  border-radius: 50px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  cursor: pointer;
+}
+.hero .next {
+  color: #D2401E;
+  background-color: #ffffff;
+  width: 60px;
+  height: 60px;
+  transform: rotate(-90deg);
+  border-radius: 50px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  cursor: pointer;
+}
+
 footer {
   background-image: url(/images/sfondostellato.jpg?898e3f19ca74ded17e72d4dd8b685061);
 }

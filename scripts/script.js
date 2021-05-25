@@ -2,6 +2,8 @@ const app = new Vue({
     el: "#app",
     data: {
         searchInput: false,
+        //Questi array contengono le voci del menu
+
         menuLeft: [{
             text: "HOME",
             link: "#",
@@ -26,6 +28,8 @@ const app = new Vue({
             text: "LANDING",
             link: "#",
         },],
+        //Questo array contiene gli indirizzi nel footer
+
         findRestaurants:[{
             indirizzo:"1614 E. Bell Rd #104.",
             citta:"Salerno, AZ 85022",
@@ -44,6 +48,8 @@ const app = new Vue({
             numero:"(989) 867-1010",
         },
         ],
+        //Questo array contiene gli orari lavorativi nel footer
+
         workDay:[{
             day:"MONDAY",
             closedKit:"Kitchen Closed",
@@ -57,7 +63,31 @@ const app = new Vue({
         },{
             day:"SUNDAY",
             hours:"9:00 - 22:00",
-        },]
+        },],
+        //Questo array contiene le immagini dell'hero
+        imagesHero:[{
+            image:"img/h3-rev-img-6.png",
+            word:"img/h3-rev-img-5.png",
+        },{
+            image:"img/h3-rev-img-4.png",
+            word:"img/h3-rev-img-3.png",
+        },{
+            image:"img/h3-rev-img-2.png",
+            word:"img/h3-rev-img-1.png",
+        },],
+        activeImgHero: 0,
     }, 
+    methods:{
+        changeImg(direction){
+            let newIndex = this.activeImgHero + direction;
+            if(newIndex < 0){
+                newIndex = this.imagesHero.length-1;
+            }else if(newIndex > ( this.imagesHero.length-1)){
+                newIndex = 0
+            }
+   
+            this.activeImgHero = newIndex
+        }
+    }
    
 })

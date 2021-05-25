@@ -59,7 +59,13 @@
             </div>
         </div>
         <main>
-            <div class="hero"></div>
+            <section class="hero pos-relative">
+                <p class="prev" @click="changeImg(-1)"><strong>PREV</strong></p>
+                <img class="wordHero" :src="imagesHero[activeImgHero].word" alt="">
+                <img class="pos-relative pizza" :src="imagesHero[activeImgHero].image" alt="">
+                <p class="next" @click="changeImg(1)"><strong>NEXT</strong></p>
+
+            </section>
         </main>
         <footer>
             <div class="d-flex ">
