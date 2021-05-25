@@ -159,6 +159,7 @@ nav .cart {
   background-image: url(/images/sfondostellato.jpg?898e3f19ca74ded17e72d4dd8b685061);
   text-align: center;
   padding: 30px;
+  overflow: hidden;
 }
 .hero .wordHero {
   position: absolute;
@@ -180,7 +181,7 @@ nav .cart {
   font-size: 10px;
   font-family: "Source Sans Pro", sans-serif;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: -30px;
   cursor: pointer;
 }
@@ -196,9 +197,77 @@ nav .cart {
   font-size: 10px;
   font-family: "Source Sans Pro", sans-serif;
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: -30px;
   cursor: pointer;
+}
+
+.row .col-3 img {
+  max-width: 100%;
+  padding: 10px 5px;
+  margin-bottom: -4px;
+}
+.row .col-3 .pallini {
+  width: 100%;
+  display: none;
+}
+.row .col-3 .eye {
+  height: 60px;
+  width: 60px;
+  color: #ffffff;
+  background-color: #D2401E;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  cursor: pointer;
+}
+.row .col-3:hover img {
+  display: none;
+}
+.row .col-3:hover .pallini,
+.row .col-3:hover .eye {
+  display: inline-block;
+}
+
+.reviews {
+  background-image: url(/images/h3-testimonials-bckgrnd.jpg?8e36aa797b8005cd58367fd52a9f3b15);
+  padding: 120px 0;
+  text-align: center;
+}
+.reviews .quotes {
+  color: #b7903c;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.reviews .quotes-text {
+  font-size: 5px;
+  vertical-align: top;
+}
+.reviews .text-review {
+  font-family: "Source Sans Pro", sans-serif;
+  display: inline-block;
+}
+.reviews p {
+  margin: 20px 0 40px 0;
+  color: #D2401E;
+  font-size: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.reviews .ball-review {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #e4e4d4;
+  margin: 0 5px;
+}
+.reviews .active-review {
+  background-color: #b7903c;
 }
 
 footer {
