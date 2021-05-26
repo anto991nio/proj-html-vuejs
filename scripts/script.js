@@ -97,7 +97,7 @@ const app = new Vue({
             price:"$25.00",
         },{
             image:"img/h3-product-img-6a-100x100.png",
-            name:"cAMPAGNOLA",
+            name:"CAMPAGNOLA",
             price:"$50.00 - $95.00",
         },],
         activeImgHero: 0,

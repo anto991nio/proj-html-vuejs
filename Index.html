@@ -237,12 +237,20 @@
                 </div>
 
             </section>
-            <section class="menu d-flex">
-                <div v-for="el in imagesPizza">
-                    <div><img :src="el.image" alt=""></div>
-                    <div>{{el.name}}</div>
-                    <div>{{el.price}}</div>
+            <section class="choose-pizza pos-relative">
+                <p class="choose"><strong> CHOOSE YOUR FLAVOR</strong></p>
+                <h2>THE BEST PIZZA MENU IN TOWN</h2>
+                <p class="choose-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores quam sed <br> rerum
+                    accusamus incidunt, reprehenderit at nesciunt itaque.</p>
+                <div class="menu d-flex">
+
+                    <div v-for="el in imagesPizza">
+                        <div><img :src="el.image" alt=""></div>
+                        <div class="name-pizza"><strong> {{el.name}}</strong></div>
+                        <div class="price-pizza"><strong> {{el.price}}</strong></div>
+                    </div>
                 </div>
+                <img class="circle" src="svg/svg-10.svg" alt="">
             </section>
             <section class="superman d-flex">
                 <div class="col-6 ">
@@ -255,8 +263,10 @@
                                 <div class="colorWH-delish mese"><strong>NOV</strong></div>
                             </div>
                             <div>
-                                <div class="colorWH-delish ">TRADITIONAL NEAPOLITAN PIES IN KYOTO <br> PIZZA MERCATO</div>
-                                <div class="colorOR-delish indirizzo"><i class="fa fa-map-marker" aria-hidden="true"> </i> 204 E. Pizzetta Tommaso</div>
+                                <div class="colorWH-delish ">TRADITIONAL NEAPOLITAN PIES IN KYOTO <br> PIZZA MERCATO
+                                </div>
+                                <div class="colorOR-delish indirizzo"><i class="fa fa-map-marker" aria-hidden="true">
+                                    </i> 204 E. Pizzetta Tommaso</div>
                             </div>
                         </div>
                         <div class="d-flex borderdelish">
@@ -266,7 +276,8 @@
                             </div>
                             <div>
                                 <div class="colorWH-delish">TERARAZZAPATIO DINING SPACE OPENING <br> THIS WEEKEND</div>
-                                <div class="colorOR-delish indirizzo"><i class="fa fa-map-marker" aria-hidden="true"> </i> 204 E. Pizzetta Tommaso</div>
+                                <div class="colorOR-delish indirizzo"><i class="fa fa-map-marker" aria-hidden="true">
+                                    </i> 204 E. Pizzetta Tommaso</div>
                             </div>
                         </div>
                         <div class="d-flex">
@@ -276,14 +287,15 @@
                             </div>
                             <div>
                                 <div class="colorWH-delish">SIENNA PRIVATE DINING ROOM WITH <br> STEPHANE BRUNN</div>
-                                <div class="colorOR-delish indirizzo"><i class="fa fa-map-marker" aria-hidden="true"> </i> 204 E. Pizzetta Tommaso</div>
+                                <div class="colorOR-delish indirizzo"><i class="fa fa-map-marker" aria-hidden="true">
+                                    </i> 204 E. Pizzetta Tommaso</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 pos-relative">
                     <img src="img\h3-img-5a.jpg" alt="">
-                    <img class="cart"src="svg/svg-9.svg" alt="">
+                    <img class="cart" src="svg/svg-9.svg" alt="">
 
                 </div>
             </section>
@@ -300,7 +312,7 @@
                     <input type="date" v-model="data">
                     <span><strong>AT</strong> </span>
                     <select name="hours" id="hours" v-model="hours">
-                        
+
                         <option value="7:00pm">7:00pm</option>
                         <option value="8:00pm">8:00pm</option>
                         <option value="9:00pm">9:00pm</option>
@@ -310,8 +322,8 @@
                     </select>
                     <div class="btnReservation" @click="clickReservation">BOOK A TABLE</div>
                 </div>
-                
-            
+
+
             </section>
         </main>
         <footer>

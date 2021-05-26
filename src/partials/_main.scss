@@ -271,7 +271,7 @@
 }
 .reservation{
     background-image: url(../../img/h3-background-img-3.jpg);
-    padding: 50px ;
+    padding: 80px ;
     font-size: 10px;
     text-align: center;
     margin-bottom: 5px;
@@ -355,9 +355,48 @@
     margin-bottom: 5px;
   
 }
+.choose-pizza{
+    text-align: center;
+    padding: 60px;
+    font-family: $fontFamily;
+    .choose{
+        color: $btnOrange;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .choose-info{
+        color: $textFooter;
+        font-size: 13px;
+        margin-top: 15px;
+    }   
+    .circle{
+        height: 30px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 5px;
+        
+    }
+    
+
+}
 .menu{
+    padding: 60px;
     justify-content: space-between;
+    text-align: center;
     img{
-        height: 150px;
+        height: 200px;
+    }
+    .name-pizza{
+        color: #b7903c;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .price-pizza{
+        color: $btnOrange;
+        font-size: 13px;
+
     }
 }

@@ -399,7 +399,7 @@ nav .cart {
 
 .reservation {
   background-image: url(/images/h3-background-img-3.jpg?d370b04a1c53f55b05c6c5f583b70f38);
-  padding: 50px;
+  padding: 80px;
   font-size: 10px;
   text-align: center;
   margin-bottom: 5px;
@@ -481,11 +481,47 @@ nav .cart {
   margin-bottom: 5px;
 }
 
+.choose-pizza {
+  text-align: center;
+  padding: 60px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.choose-pizza .choose {
+  color: #D2401E;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.choose-pizza .choose-info {
+  color: #b2b2b2;
+  font-size: 13px;
+  margin-top: 15px;
+}
+.choose-pizza .circle {
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+}
+
 .menu {
+  padding: 60px;
   justify-content: space-between;
+  text-align: center;
 }
 .menu img {
-  height: 150px;
+  height: 200px;
+}
+.menu .name-pizza {
+  color: #b7903c;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.menu .price-pizza {
+  color: #D2401E;
+  font-size: 13px;
 }
 
 footer {
