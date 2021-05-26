@@ -130,7 +130,11 @@ const app = new Vue({
                 data: this.data,
                 person: this.person,
             })
-            this.reser = true
+            if(this.hours==="" || this.data==="" || this.person===""){
+                return
+            }
+            else{
+                this.reser = true}
         },
         reserF(){
             this.reser = false
