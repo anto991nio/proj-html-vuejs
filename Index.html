@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div id="app" >
+    <div id="app">
 
         <!-- Inizio facendo sia la nav bar che il footer, dopo inizio con il main -->
         <!-- La nav bar la divido in 4 parti, e giusto al centro inserirò il logo così come è nello screen -->
@@ -39,12 +39,13 @@
                     </div>
                     <ul class="d-flex">
                         <li class=" pos-relative">
-                            <a href="#" @click="cartClick"><img class="vespa " src="svg/svg-1.svg" alt=""><span>CART</span>
+                            <a href="#" @click="cartClick"><img class="vespa " src="svg/svg-1.svg"
+                                    alt=""><span>CART</span>
                                 <span class="cart">0</span>
                             </a>
-                            <div v-if="clickCart"class="itemCart">
+                            <div v-if="clickCart" class="itemCart">
                                 <div v-if="!cart">
-                                    <h4>IL TUO CARRELLO è VUOTO</h4>  
+                                    <h4>IL TUO CARRELLO è VUOTO</h4>
                                 </div>
                             </div>
                         </li>
@@ -62,7 +63,7 @@
                 </nav>
             </div>
         </div>
-        <main class="pos-relative"@click="nocartClick">
+        <main class="pos-relative" @click="nocartClick">
             <div class="pizza-pointer">
                 <a href="#navi"><img src="svg/svg-4.svg" alt=""></a>
             </div>
@@ -247,7 +248,8 @@
             <section class="choose-pizza pos-relative">
                 <p class="choose"><strong> CHOOSE YOUR FLAVOR</strong></p>
                 <h2>THE BEST PIZZA MENU IN TOWN</h2>
-                <p class="choose-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores quam sed <br> rerum
+                <p class="choose-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, asperiores quam
+                    sed <br> rerum
                     accusamus incidunt, reprehenderit at nesciunt itaque.</p>
                 <div class="menu d-flex">
 
@@ -331,13 +333,14 @@
                 </div>
                 <div v-if="reser" class="conferm pos-relative">
                     <div v-for="el in reservation">
-                        <h2 v-if="el.hours||el.data||el.person"><strong>Gentile Cliente ti confermiamo la prenotazione alle ore {{el.hours}} del giorno {{el.data}} per {{el.person}}</strong>
+                        <h2 v-if="el.hours||el.data||el.person"><strong>Gentile Cliente ti confermiamo la prenotazione
+                                alle ore {{el.hours}} del giorno {{el.data}} per {{el.person}}</strong>
                             <div class="btn-reservation" @click="reserF">
                                 OK
                             </div>
                         </h2>
                     </div>
-                    
+
                 </div>
 
             </section>
@@ -349,10 +352,13 @@
                         <div class="col-4">
                             <ul>
                                 <h3>FIND OUR RESTAURANTS</h3>
-                                <li v-for="el in findRestaurants">
-                                    <p>{{el.indirizzo}}</p>
-                                    <p>{{el.citta}}</p>
-                                    <p>{{el.numero}}</p>
+                                <li class="linkmaps" v-for="el in findRestaurants">
+                                    <a  :href="el.link">
+                                        <p>{{el.indirizzo}}</p>
+                                        <p>{{el.citta}}</p>
+                                        <p>{{el.numero}}</p>
+                                    </a>
+
                                 </li>
                             </ul>
                         </div>

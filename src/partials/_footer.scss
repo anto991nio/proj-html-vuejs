@@ -37,10 +37,19 @@ footer{
         ul {
             li{
                 margin: 20px 0;
+                
             }
             p{
                 color: $textFooter;
                 font-size: 14px;
+                
+            }
+            .linkmaps{
+                    
+                &:hover p{
+                    color: white;
+                }
+                
                 
             }
         }
