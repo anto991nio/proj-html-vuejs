@@ -325,7 +325,16 @@
                     </select>
                     <div class="btnReservation" @click="clickReservation">BOOK A TABLE</div>
                 </div>
-
+                <div v-if="reser" class="conferm pos-relative">
+                    <div v-for="el in reservation">
+                        <h2 v-if="el.hours||el.data||el.person"><strong>Gentile Cliente ti confermiamo la prenotazione alle ore {{el.hours}} del giorno {{el.data}} per {{el.person}}</strong>
+                            <div class="btn-reservation" @click="reserF">
+                                OK
+                            </div>
+                        </h2>
+                    </div>
+                    
+                </div>
 
             </section>
         </main>
