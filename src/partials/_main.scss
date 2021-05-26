@@ -400,3 +400,16 @@
 
     }
 }
+
+.pizza-pointer{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: white;
+    text-align: center;
+    line-height: 60px;
+}

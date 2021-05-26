@@ -18,7 +18,7 @@
 
         <!-- Inizio facendo sia la nav bar che il footer, dopo inizio con il main -->
         <!-- La nav bar la divido in 4 parti, e giusto al centro inserirò il logo così come è nello screen -->
-        <div class="navbar">
+        <div class="navbar" id="navi">
             <div class="container navbar  ">
                 <nav class="d-flex">
                     <a class="btnNavbar" href="#">ORDER ONLINE</a>
@@ -59,6 +59,9 @@
             </div>
         </div>
         <main class="pos-relative">
+            <div class="pizza-pointer">
+                <a href="#navi"><img src="svg/svg-4.svg" alt=""></a>
+            </div>
             <section class="hero pos-relative">
                 <p class="prev" @click="changeImg(-1)"><strong>PREV</strong></p>
                 <img class="wordHero" :src="imagesHero[activeImgHero].word" alt="">
