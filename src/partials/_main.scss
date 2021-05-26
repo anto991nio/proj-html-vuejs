@@ -440,4 +440,14 @@
             cursor: pointer;
         }
     }
+}.itemCart{
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    font-family: $fontFamily;
+    color: black;
+    h4{
+        padding: 20px;
+    }
+    
 }

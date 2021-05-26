@@ -105,7 +105,9 @@ const app = new Vue({
         data: "",
         person: "",
         reservation: [{}],
-        reser: false
+        reser: false,
+        cart:false,
+        clickCart:false
     },
     methods: {
         changeImg(direction) {
@@ -128,6 +130,12 @@ const app = new Vue({
         },
         reserF(){
             this.reser = false
+        },
+        cartClick(){
+            this.clickCart=!this.clickCart
+
+        },nocartClick(){
+            this.clickCart=false
         }
     }
 

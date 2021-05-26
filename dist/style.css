@@ -566,6 +566,17 @@ nav .cart {
   cursor: pointer;
 }
 
+.itemCart {
+  position: absolute;
+  width: 200px;
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+}
+.itemCart h4 {
+  padding: 20px;
+}
+
 footer {
   background-image: url(/images/sfondostellato.jpg?898e3f19ca74ded17e72d4dd8b685061);
 }

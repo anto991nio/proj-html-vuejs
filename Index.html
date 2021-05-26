@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" >
 
         <!-- Inizio facendo sia la nav bar che il footer, dopo inizio con il main -->
         <!-- La nav bar la divido in 4 parti, e giusto al centro inserirò il logo così come è nello screen -->
@@ -39,10 +39,14 @@
                     </div>
                     <ul class="d-flex">
                         <li class=" pos-relative">
-                            <a href="#"><img class="vespa " src="svg/svg-1.svg" alt=""><span>CART</span>
+                            <a href="#" @click="cartClick"><img class="vespa " src="svg/svg-1.svg" alt=""><span>CART</span>
                                 <span class="cart">0</span>
                             </a>
-
+                            <div v-if="clickCart"class="itemCart">
+                                <div v-if="!cart">
+                                    <h4>IL TUO CARRELLO è VUOTO</h4>  
+                                </div>
+                            </div>
                         </li>
                         <li class="pos-relative ">
                             <a href="#" class="d-flex">
@@ -58,7 +62,7 @@
                 </nav>
             </div>
         </div>
-        <main class="pos-relative">
+        <main class="pos-relative"@click="nocartClick">
             <div class="pizza-pointer">
                 <a href="#navi"><img src="svg/svg-4.svg" alt=""></a>
             </div>
